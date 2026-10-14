@@ -6,7 +6,7 @@ const cartDialog=$('#cart-dialog'),lightbox=$('#lightbox');
 function toast(t){$('.toast').textContent=t;$('.toast').classList.add('visible');clearTimeout(toast.timer);toast.timer=setTimeout(()=>$('.toast').classList.remove('visible'),3000);}
 function save(){try{localStorage.setItem('bierbach-selection-v1',JSON.stringify(cart));}catch{}updateCount();}
 function updateCount(){$$('[data-cart-count]').forEach(el=>el.textContent=cart.reduce((s,x)=>s+x.quantity,0));}
-function capture(){const f=$('#request-form');if(!f)return;const d=Object.fromEntries(new FormData(f));d.card=$('[name="card"]',f).checked;details={...details,...d};}
+function capture(){const f=$('#request-form');if(!f)return;const d=Object.fromEntries(new FormData(f));d.card=$('[name="card"]',f).checked;d.photoRequest=!!$('[name="photoRequest"]',f)?.checked;details={...details,...d};}
 function field(label,name,opts={}){const {type='text',required=false,placeholder='',autocomplete='',max=160}=opts;return `<label>${label}<input name="${name}" type="${type}" value="${esc(details[name])}" ${required?'required':''} ${placeholder?`placeholder="${esc(placeholder)}"`:''} ${autocomplete?`autocomplete="${autocomplete}"`:''} maxlength="${max}"></label>`;}
 function radio(name,value,label){return `<label class="choice ${details[name]===value?'selected':''}"><input type="radio" name="${name}" value="${value}" ${details[name]===value?'checked':''}><span>${label}</span></label>`;}
 function renderCart(){
