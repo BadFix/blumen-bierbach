@@ -1,0 +1,14 @@
+{
+  "whatsappNumber": "491718639109",
+  "demo": true,
+  "cardCents": 350,
+  "deliveryCents": 1000,
+  "products": [
+    {"id":"rosentraum","name":"Rosentraum","image":"rosentraum","category":"romantisch","description":"Rosen in warmen Rot- und Cremetönen. Als Inspiration für Ihren individuellen Strauß.","priceCents":null},
+    {"id":"herbstliebe","name":"Herbstliebe","image":"herbstliebe","category":"farbenfroh","description":"Leuchtende Farben, liebevoll kombiniert. Für einen besonderen Menschen oder einfach so.","priceCents":null},
+    {"id":"mondschein","name":"Mondschein","image":"mondschein","category":"natuerlich","description":"Weiß, Creme und frisches Grün. Eine ruhige, zeitlose Blumenidee.","priceCents":null},
+    {"id":"sommergarten","name":"Sommergarten","image":"sommergarten","category":"romantisch","description":"Zarte Rosatöne und ein lebendiger Gartencharakter. Saisonale Zusammenstellung nach Absprache.","priceCents":null},
+    {"id":"powerfrau","name":"Powerfrau","image":"powerfrau","category":"farbenfroh","description":"Kräftige Rot-, Orange- und Gelbtöne. Ein ausdrucksstarker Blumengruß.","priceCents":null},
+    {"id":"wunschstrauss","name":"Ihr Wunschstrauß","image":"cultivation","category":"natuerlich","description":"Sie bestimmen Budget, Anlass und Farbstimmung. Wir gestalten Ihren persönlichen Strauß.","priceCents":null}
+  ]
+}
