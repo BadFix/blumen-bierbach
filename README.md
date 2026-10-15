@@ -14,6 +14,14 @@ Open http://127.0.0.1:4191. Generated pages are in `dist/`. To regenerate after 
 
 ## Interactive flower selection
 
+## Readable typography
+
+The existing DM Sans and Playfair Display families are retained. Content uses 16–17 px, form inputs use 17 px, and labels/supporting text use at least 14 px, including mobile. `dist/readability.css` adapts spacing, navigation, card grids, finder results and delivery choices for the larger text. Page stylesheets use versioned URLs for coherent updates.
+
+All twelve generated pages were checked at 390 px and 1440 px, with additional checks at 320, 601, 640 and 768 px and checks of the inquiry/finder dialogs. No page-wide horizontal overflow or clipped control text was found. The horizontal occasion rail intentionally scrolls.
+
+## Interactive flower selection
+
 The three-step flower finder selects an occasion, a colour direction and a freely chosen budget. Existing products are matched by style; the custom bouquet remains an option. Confirmed finder preferences transfer to catalog fields and the inquiry. They are kept in sessionStorage, while favourites and basket selections use localStorage. No recipient/contact data is persisted.
 
 The catalog supports text search, combined style/favourite filters and accessible save buttons. The inquiry adds quick requested dates, live greeting-card text preview with text suggestions, and an optional pre-delivery photo request subject to personal agreement. A mobile summary bar keeps the basket accessible.
